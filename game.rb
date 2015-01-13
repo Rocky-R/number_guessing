@@ -16,11 +16,9 @@ number_guesses = 0
 won = false
 guessed_numbers = []
 
-puts computer_number
 greet_user
 
 while number_guesses < 5 && !won
-  p guessed_numbers
   guess = gets.chomp.to_i
   if guess == computer_number
     puts "Congratulations, you guessed my number!"
